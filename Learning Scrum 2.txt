@@ -1,0 +1,30 @@
+1pf2 - Use programming language to realise algorithms, design patterns, abstract data types, data structures, design models and user interfaces 
+1pf3 - Use a modern integrated development tool, including version control systems 
+1pf6 - Design applications based on a layered software architecture
+1pf7 - Use software components/libraries 
+1pf8 - Prepare documentation in relation to valid de-facto standards in the field 
+1pf9 - Use up-to-date techniques and tools for testing and quality assurance 
+
+1pk1 - Participate as a professional programmer in development and maintenance projects 
+1pk2 - Keep up to date with current programming languages, development tools, programming technology and program design 
+
+1pv3 - Abstraction mechanisms in modern programming languages 
+
+
+1sf1 - Model and design It systems 
+1sf2 - Use an appropriate software architecture 
+1sf3 - Document and communicate product and process – including traceability 
+1sf4 - Ensure quality of product and process 
+1sf5 - Use appropriate design patterns 
+
+1sv2 - The importance of quality criteria for the systems development process and the final systems de-sign 
+
+
+1vf1 - Analyse and model business processes 
+1vf4 - Communicate and explain to both internal and external partners 
+
+1vk2 - Collaborate with representatives from the user organisation and the development organisation based on an understanding of business processes and concepts 
+
+1vv2 - Standard systems in a company, including organisational concepts 
+1vv3 - Reasons for investing in IT 
+(20)

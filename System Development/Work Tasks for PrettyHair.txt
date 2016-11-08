@@ -1,0 +1,25 @@
+==RECEIVE ORDERS==
+
+Customer Database
+ - Checking existing customers
+ - Creating new customers
+
+Order System
+ - Creating new order
+
+
+Break use case into classes
+ => Domain Model => Sequence Diagram
+ => Make tests => Code => Refactor
+
+
+==Criterias for when task is done==
+
+Making Tests
+When all methods in SD is being tested
+
+Coding
+When all tests pass
+
+Refactoring
+When code looks simple & easy to understand, and the tests still pass

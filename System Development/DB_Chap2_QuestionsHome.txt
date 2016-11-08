@@ -1,0 +1,35 @@
+2.1
+File
+ - Actual file on computer, eg a txt file
+
+Record
+ - Entry in a table, or a "row"
+
+Field
+ - Attribute in a table, or a "colum"
+
+
+2.7
+Avoid data redundency
+Simplifies data edits
+
+2.13
+Primary key is the candidate key that was chosen to represent the data.
+Candidate key (or keys if composite), are unique for each row (or entry).
+
+2.14
+Primary & Foeign keys
+Themes
+
+2.18
+A Foreign key is a key that represents the primary key in another trable
+
+2.19
+A unique key is a key that has to be unique for each data set, or row in a table.
+
+2.25
+Functional Dependency?
+Eh, Question plz.
+
+2.28
+Normalization is the process of taking a flat-file database and converting it to a fully relational database

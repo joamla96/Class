@@ -1,0 +1,30 @@
+2.20
+Sets up rules, that ensures data exists where our colum exists as foreign key, and in our table where is primary	 key
+
+Student Name as foreign key in Class must exist in Student
+
+2.23
+An attribute depends on other attributes
+as one attribute determines other atribute
+
+Example
+Weight, Height => Body
+
+2.24
+Length, Width => Area
+
+2.26
+F depends on composite key (D,E)
+
+False & False, as F depends on composite keys not singular keys
+
+-----
+
+2.29
+Always there is a primary key.
+
+2.30
+It doesn't change at all.
+
+2.31
+The whole tuple is depent on the primary key.

@@ -1,0 +1,93 @@
+1.6
+Pet and Owner
+
+1.8
+Pets
+*- ID
+ - Name
+ - Type
+ - Breed
+ - DOB
+
+Owners
+*- PhoneNr
+ - Firstname
+ - Lastname
+ - Email
+
+1.12
+Pets
+*-ID
+
+Owners
+*-Phone
+
+Service
+*-ID
+
+
+1.13
+Without unique ID, deleting data is difficult
+
+
+1.18
+- Create and process forms
+- Process user querries
+- Create and process reports
+- ExecuteApplication Logic
+- Control Application
+
+1.19
+Data about Data
+ - Names of tables
+ - Names of Colums
+ - Properties of colums, and tables
+
+
+1.22
+To manage data
+Create, process and administrate databases
+
+1.23
+- Create Databases
+- Create Tables
+- Create Supporting Structures
+- Read Database Data
+- Modify database data
+- Maintain database structure
+- Enforce Rules
+- Control Concurrency
+- Privode security
+- Preform backup and recovery
+
+------------------------------------------------------------------------------------
+
+1.31
+B: Company
+Company
+*- Name
+*- IndustryCode
+ - GrossSales
+
+Officer
+*- ID
+ - Name
+ - Title
+ - CompanyIndustryCodeName
+
+1.32
+E: Person
+Insering new emlpoyee who has not been assigned to a project or department yet
+Fireing an emlpoyee would delete numberof hours worked on project
+
+1.33
+A: 1 Theme; Equipment
+B: 2 Themes; Company, Officer [A company can have multiple officers]
+C: 1 Theme; Company
+D: 2 Theme; Computer, Disk [A computer can have multiple disks]
+E: 3 Themes; Person, Department, Project
+
+Garden Glory
+
+
+

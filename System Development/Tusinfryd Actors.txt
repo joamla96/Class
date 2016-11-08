@@ -1,0 +1,29 @@
+Owner:
+Started Jørgen Pedersen
+Daughter Lone Rasmussen =>Took over /w Husband Ove
+Son => Took over (Hans + Morten)
+
+Responsible for daily Operations:
+Morten
+
+Responsible for sales:
+Hans
+
+Marianne (Morten Wife):
+Bookkeeping (ERP)
+
++4 Emlpoyee's
+
+
+
+Daily Operations Officer: (DOO) [Morten]
+The DOO is responsible to ensure systems are working, being the spinkers to the toilet flush (The latter is reliant off feedback from emlpoyees). The DOO has to ensure emlpoyees are being paid, and that everyone is doing their job. The DOO ensures the right flowers are in production and being shipped.
+
+Sales Operation Officer (SOO) [Hans]
+The SOO has to ensure that orders are being filled, invoices set/recived/paid, and new orders are being taken in.
+
+Bookkeeper [Marianne]
+The bookkeeper keeps track of all money related instances, this being a sale (where they ensure things like VAT is being registerd properly) to ensuring employees are being paid the right amount.
+
+General Emlpoyees (GE)
+GE's are responsible for the flowers being grown, and they stay alive.
