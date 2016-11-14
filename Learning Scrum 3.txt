@@ -1,0 +1,37 @@
+1vf1 - Analyse and model business processes 
+1vf2 - Participate in project work 
+1vf4 - Communicate and explain to both internal and external partners 
+1vf5 - Take part in the implementation of IT and change management 
+
+1vk1 - Take part in and understand the relationship between the design of business processes and design of IT systems 
+1vk2 - Collaborate with representatives from the user organisation and the development organisation based on an understanding of business processes and concepts 
+1vk3 - Acquire knowledge about new technology in a business-oriented perspective 
+
+1vv1 - How IT can improve business processes and develop the business 
+1vv3 - Reasons for investing in IT 
+
+--------
+1sf1 - Model and design It systems 
+1sf2 - Use an appropriate software architecture 
+1sf3 - Document and communicate product and process – including traceability 
+1sf4 - Ensure quality of product and process 
+1sf5 - Use appropriate design patterns 
+1sf6 - Involve users 
+
+1sk1 - Participate as a competent member of a development project 
+1sk2 - Reflect on and adapt processes and methods in practice 
+
+
+1sv2 - The importance of quality criteria for the systems development process and the final systems de-sign
+
+--------
+1pk1 - Participate as a professional programmer in development and maintenance projects 
+
+1pv3 - Abstraction mechanisms in modern programming languages 
+
+1pf4 - Realise models in a database system and construct programs which use a database interface 
+1pf6 - Design applications based on a layered software architecture 
+1pf8 - Prepare documentation in relation to valid de-facto standards in the field 
+
+--------
+1tk1 - Acquire knowledge about new operative and database systems 
