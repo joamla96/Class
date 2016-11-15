@@ -40,7 +40,7 @@ Customer(ID, Name, Address)
     <coordinates>
       <x>750</x>
       <y>170</y>
-      <w>320</w>
+      <w>340</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>Order
@@ -50,7 +50,7 @@ DeliveryDate: Datetime
 Warenumber: Int
 Quantity: Int
 --
-Order(OrderDate, DEliveryDate, WareNr, Quant)</panel_attributes>
+Order(OrderDate, DeliveryDate, ProductID, Quant)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -61,11 +61,11 @@ Order(OrderDate, DEliveryDate, WareNr, Quant)</panel_attributes>
       <w>100</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Ware
+    <panel_attributes>Product
 --
 ID: Int
 --
-Ware(ID)</panel_attributes>
+Product(ID)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -98,15 +98,15 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1060</x>
+      <x>1080</x>
       <y>190</y>
-      <w>150</w>
+      <w>130</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=1..n
 </panel_attributes>
-    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
   </element>
 </diagram>
