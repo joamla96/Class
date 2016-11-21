@@ -33,6 +33,7 @@ CREATE TABLE class_PET (
 	PetDOB			Date		NULL,
 	PetWeight		Float		NOT NULL,
 	OwnerID			Int			NOT NULL,
+	CONSTRAINT		PetMaxWeight_Chk CHECK (PetWeight < 250),
 	CONSTRAINT		PET_PK		PRIMARY KEY(PetID),
 
 	CONSTRAINT		PET_POWNER_FK	FOREIGN KEY(OwnerID)
