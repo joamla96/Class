@@ -1,2 +1,2 @@
 ALTER TABLE class_PET
-ADD CONSTRAINT PetMaxWeight_Chk CHECK PetWeight < 250
+ADD CONSTRAINT PetMaxWeight_Chk CHECK (PetWeight < 250)
