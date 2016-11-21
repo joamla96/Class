@@ -53,7 +53,7 @@ WHERE b.AverageLifeExpectancy > 15
 
 -- 3.41
 SELECT o.OwnerLastName, o.OwnerFirstName, p.PetName, p.PetType, p.PetBreed, b.AverageLifeExpectancy
-FROM class_PET_OWNER as o
+FROM class_PET_OWNER AS o
 	JOIN class_PET AS p ON p.OwnerID = o.OwnerID
 	JOIN class_BREED AS b on b.BreedName = p.PetBreed
 WHERE p.PetBreed != 'Unknown'
