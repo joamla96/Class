@@ -1,7 +1,6 @@
 USE [EJL76_DB]
-GO
 
-CREATE PROCEDURE usp_GetOwnerByLastName (
+GO CREATE PROCEDURE usp_GetOwnerByLastName (
 	@LastName NVarChar(25)
 ) AS
 BEGIN
@@ -10,9 +9,9 @@ BEGIN
 	WHERE OwnerLastName LIKE '%'+@LastName+'%'
 END
 
-GO
 
-CREATE PROCEDURE usp_GetOwnerByEmail (
+
+GO CREATE PROCEDURE usp_GetOwnerByEmail (
 	@Firstname NVarChar(25),
 	@Email NVarChar(50)
 ) AS
@@ -23,9 +22,9 @@ BEGIN
 		AND OwnerEmail = @Email
 END
 
-GO
 
-CREATE PROCEDURE usp_GetInfomation (
+
+GO CREATE PROCEDURE usp_GetInfomation (
 	@OwnerID Int
 ) AS
 BEGIN
