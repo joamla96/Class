@@ -31,7 +31,5 @@ JOIN class_PET  AS p ON p.OwnerID = o.OwnerID
 WHERE	p.PetType = 'Cat'
 AND		p.PetName = 'Teddy';
 
-
-
-
+-- 3.37 - See Seperate File
 
