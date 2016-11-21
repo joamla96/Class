@@ -13,8 +13,8 @@ FROM class_PET_OWNER
 WHERE OwnerID IN (
 	SELECT OwnerID
 	FROM class_PET
-	WHERE	PetType = 'Cat'
-		AND		PetName = 'Teddy'	
+	WHERE PetType = 'Cat'
+		AND PetName = 'Teddy'	
 );
 
 -- 3.37 - See Seperate Files (CreatePetTable & InsertPetData)
@@ -40,7 +40,7 @@ WHERE p.PetType = 'Cat';
 -- 3.39
 SELECT DISTINCT OwnerFirstName, OwnerLastName, OwnerEmail
 FROM class_PET_OWNER AS o
-	JOIN	class_PET  AS p ON p.OwnerID = o.OwnerID
+	JOIN class_PET  AS p ON p.OwnerID = o.OwnerID
 WHERE p.PetType = 'Cat' 
 	AND	p.PetName = 'Teddy';
 
