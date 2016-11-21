@@ -22,6 +22,10 @@ CREATE TABLE class_PET (
 	PetWeight		Float		NOT NULL,
 	OwnerID			Int			NOT NULL,
 	CONSTRAINT		PET_PK		PRIMARY KEY(PetID),
+
 	CONSTRAINT		PET_POWNER_FK	FOREIGN KEY(OwnerID)
-					REFERENCES class_PET_OWNER(OwnerID)
+					REFERENCES class_PET_OWNER(OwnerID),
+
+	CONSTRAINT		PET_BREED_FK	Foreign Key(PetBreed)
+					REFERENCES class_BREED(BreedName)
 );
