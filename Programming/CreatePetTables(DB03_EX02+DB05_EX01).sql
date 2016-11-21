@@ -13,7 +13,6 @@ MaxWeight	Float			NULL,
 AverageLifeExpectancy	Float	NULL,
 
 CONSTRAINT	Breed_PK	Primary Key(BreedName),
-CONSTRAINT	Breed_UNQ	Unique(BreedName)
 );
 
 

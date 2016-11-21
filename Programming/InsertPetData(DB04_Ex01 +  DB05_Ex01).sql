@@ -2,7 +2,7 @@ INSERT INTO class_BREED (BreedName, MinWeight, MaxWeight, AverageLifeExpectancy)
 ('Border Collie', 15.0, 22.5, 20),
 ('Cashmere', 10.0, 15.0, 12),
 ('Collie Mix', 17.5, 25.0, 18),
-('Std. Poddle', 22.5, 30.0, 18),
+('Std. Poodle', 22.5, 30.0, 18),
 ('Unknown', null, null, null);
 
 INSERT INTO class_PET_OWNER (OwnerLastName, OwnerFirstName, OwnerPhone,	OwnerEmail) VALUES
