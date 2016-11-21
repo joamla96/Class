@@ -39,7 +39,7 @@ WHERE p.PetType = 'Cat';
 
 -- 3.39
 SELECT DISTINCT OwnerFirstName, OwnerLastName, OwnerEmail
-FROM	class_PET_OWNER AS o
+FROM class_PET_OWNER AS o
 	JOIN	class_PET  AS p ON p.OwnerID = o.OwnerID
 WHERE p.PetType = 'Cat' 
 	AND	p.PetName = 'Teddy';
@@ -50,3 +50,10 @@ FROM class_PET_OWNER AS o
 	JOIN class_PET AS p ON o.OwnerID = p.OwnerID
 	JOIN class_BREED as b ON b.BreedName = p.PetBreed
 WHERE b.AverageLifeExpectancy > 15
+
+-- 3.41
+SELECT o.OwnerLastName, o.OwnerFirstName, p.PetName, p.PetType, p.PetBreed, b.AverageLifeExpectancy
+FROM class_PET_OWNER as o
+	JOIN class_PET AS p ON p.OwnerID = o.OwnerID
+	JOIN class_BREED AS b on b.BreedName = p.PetBreed
+WHERE p.PetBreed != 'Unknown'
