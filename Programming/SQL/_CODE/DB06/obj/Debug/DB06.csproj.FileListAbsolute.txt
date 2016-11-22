@@ -1,1 +1,6 @@
 D:\OneDrive\EAL\OneDrive for Business\Class\Programming\SQL\_CODE\DB06\bin\Debug\DB06.exe.config
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\SQL\_CODE\DB06\obj\Debug\DB06.csprojResolveAssemblyReference.cache
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\SQL\_CODE\DB06\bin\Debug\DB06.exe
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\SQL\_CODE\DB06\bin\Debug\DB06.pdb
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\SQL\_CODE\DB06\obj\Debug\DB06.exe
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\SQL\_CODE\DB06\obj\Debug\DB06.pdb
