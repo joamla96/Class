@@ -13,12 +13,13 @@ namespace DB06 {
 		}
 
 		private void Run() {
-			while(Running) {
+			while (Running) {
 				Console.Clear();
 
 				Console.WriteLine("Please Select your Operation:\n");
-				Console.WriteLine("1. Insert Pet");
+				Console.WriteLine("1. Insert new Pet");
 				Console.WriteLine("2. Show All Pets");
+				Console.WriteLine("3. Insert new Pet OWner");
 
 				Console.WriteLine("\nInsert Option (Eg. 1):");
 				string Input = Console.ReadLine();
@@ -26,6 +27,7 @@ namespace DB06 {
 				switch (Input) {
 					case "1": MenuInsertPet(); break;
 					case "2": MenuShowAllPets(); break;
+					case "3": MenuInsertNewOwner(); break;
 
 					case "x":
 					case "X": MenuExit(); break;
@@ -34,19 +36,55 @@ namespace DB06 {
 			}
 		}
 
+		private void MenuInsertNewOwner() {
+			Console.WriteLine("Write Firstname:");
+			string Firstname = Console.ReadLine();
+
+			Console.WriteLine("Write Lastname:");
+			string Lastname = Console.ReadLine();
+
+			Console.WriteLine("Write Phone Number:");
+			string Phone = Console.ReadLine();
+
+			Console.WriteLine("Write Email:");
+			string Email = Console.ReadLine();
+
+
+			using (SqlConnection DB = new SqlConnection(ConnectionArgs)) {
+				SqlCommand cmd = new SqlCommand("usp_InsertOwner", DB);
+				cmd.CommandType = CommandType.StoredProcedure;
+
+				cmd.Parameters.Add(new SqlParameter("OwnerFirstName", Firstname));
+				cmd.Parameters.Add(new SqlParameter("OwnerLastName", Lastname));
+				cmd.Parameters.Add(new SqlParameter("OwnerPhone", Phone));
+				cmd.Parameters.Add(new SqlParameter("OwnerEmail", Email));
+
+				try {
+					DB.Open();
+					cmd.ExecuteNonQuery();
+					Console.WriteLine("\nSuccess!");
+				} catch (SqlException e) {
+					Console.WriteLine("Error: " + e.Message);
+				} finally {
+					DB.Close();
+				}
+			}
+			Console.ReadKey();
+		}
+
 		private void MenuShowAllPets() {
 			using (SqlConnection DB = new SqlConnection(ConnectionArgs)) {
 				try {
 					DB.Open();
 
-					SqlCommand cmd = new SqlCommand("usp_GetPets",DB);
+					SqlCommand cmd = new SqlCommand("usp_GetPets", DB);
 					cmd.CommandType = CommandType.StoredProcedure;
 
 					SqlDataReader reader = cmd.ExecuteReader();
 
 					Console.WriteLine("ID	Name	Type	Breed	DOB	Weight	OwnerID");
-					if(reader.HasRows) {
-						while(reader.Read()) {
+					if (reader.HasRows) {
+						while (reader.Read()) {
 							string ID = reader["PetID"].ToString();
 							string Name = reader["PetName"].ToString();
 							string Type = reader["PetType"].ToString();
@@ -55,7 +93,7 @@ namespace DB06 {
 							string Weight = reader["PetWeight"].ToString();
 							string OwnerID = reader["OwnerID"].ToString();
 
-							Console.Write(ID + "\t" + Name + "\t" + Type + "\t" + Breed + "\t" +DOB + "\t" +Weight + "\t" +OwnerID + "\n");
+							Console.Write(ID + "\t" + Name + "\t" + Type + "\t" + Breed + "\t" + DOB + "\t" + Weight + "\t" + OwnerID + "\n");
 						}
 					} else {
 						Console.WriteLine("No Records Found.");
