@@ -328,21 +328,8 @@ namespace DB06 {
 		}
 
 		private void MenuExit() {
-			throw new NotImplementedException();
+			Environment.Exit(0);
 		}
-
-		private void function() {
-			using (SqlConnection DB = new SqlConnection(ConnectionArgs)) {
-				try {
-					DB.Open();
-
-
-				} catch (SqlException e) {
-					Console.WriteLine("Error: " + e.Message);
-				} finally {
-					DB.Close();
-				}
-			}
-		}
+		
 	}
 }
