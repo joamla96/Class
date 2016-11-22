@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DB06
-{
-    public class ExDB06
-    {
-		
-    }
+namespace DB06 {
+	class Program {
+		static void Main(string[] args) {
+		}
+	}
 }
