@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -22,12 +18,14 @@ namespace DB06 {
 
 				Console.WriteLine("Please Select your Operation:\n");
 				Console.WriteLine("1. Insert Pet");
+				Console.WriteLine("2. Show All Pets");
 
 				Console.WriteLine("\nInsert Option (Eg. 1):");
 				string Input = Console.ReadLine();
 
 				switch (Input) {
 					case "1": MenuInsertPet(); break;
+					case "2": MenuShowAllPets(); break;
 
 					case "x":
 					case "X": MenuExit(); break;
@@ -36,8 +34,43 @@ namespace DB06 {
 			}
 		}
 
-		private void MenuExit() {
-			throw new NotImplementedException();
+		private void MenuShowAllPets() {
+			using (SqlConnection DB = new SqlConnection(ConnectionArgs)) {
+				try {
+					DB.Open();
+
+					SqlCommand cmd = new SqlCommand("usp_GetPets",DB);
+					cmd.CommandType = CommandType.StoredProcedure;
+
+					SqlDataReader reader = cmd.ExecuteReader();
+
+					Console.WriteLine("ID	Name	Type	Breed	DOB	Weight	OwnerID");
+					if(reader.HasRows) {
+						while(reader.Read()) {
+							string ID = reader["PetID"].ToString();
+							string Name = reader["PetName"].ToString();
+							string Type = reader["PetType"].ToString();
+							string Breed = reader["PetBreed"].ToString();
+							string DOB = reader["PetDOB"].ToString();
+							string Weight = reader["PetWeight"].ToString();
+							string OwnerID = reader["OwnerID"].ToString();
+
+							Console.Write(ID + "\t" + Name + "\t" + Type + "\t" + Breed + "\t" +DOB + "\t" +Weight + "\t" +OwnerID + "\n");
+						}
+					} else {
+						Console.WriteLine("No Records Found.");
+					}
+
+				} catch (SqlException e) {
+					Console.WriteLine("Error: " + e.Message);
+				} finally {
+					DB.Close();
+				}
+
+
+				Console.WriteLine("\n\nClick any key, to return to menu.");
+				Console.ReadKey();
+			}
 		}
 
 		private void MenuInsertPet() {
@@ -65,24 +98,29 @@ namespace DB06 {
 			DateTime PetDOB = DateTime.Parse(PetDOB_temp);
 
 			using (SqlConnection DB = new SqlConnection(ConnectionArgs)) {
+				SqlCommand cmd = new SqlCommand("usp_InsertPet", DB);
+				cmd.CommandType = CommandType.StoredProcedure;
+
+				cmd.Parameters.Add(new SqlParameter("PetName", PetName));
+				cmd.Parameters.Add(new SqlParameter("PetType", PetType));
+				cmd.Parameters.Add(new SqlParameter("PetBreed", PetBreed));
+				cmd.Parameters.Add(new SqlParameter("PetDOB", PetDOB.ToString("yyyy-MM-dd")));
+				cmd.Parameters.Add(new SqlParameter("PetWeight", PetWeight));
+				cmd.Parameters.Add(new SqlParameter("OwnerID", PetOwnerID));
+
 				try {
 					DB.Open();
-
-					SqlCommand cmd = new SqlCommand("usp_InsertPet", DB);
-					cmd.CommandType = CommandType.StoredProcedure;
-
-					cmd.Parameters.Add(new SqlParameter("PetName", PetName));
-					cmd.Parameters.Add(new SqlParameter("PetType", PetType));
-					cmd.Parameters.Add(new SqlParameter("PetBreed", PetBreed));
-					cmd.Parameters.Add(new SqlParameter("PetDOB", PetDOB.ToString("yyyy-MM-dd")));
-					cmd.Parameters.Add(new SqlParameter("PetWeight", PetWeight));
-					cmd.Parameters.Add(new SqlParameter("OwnerID", PetOwnerID));
-
 					cmd.ExecuteNonQuery();
 				} catch (SqlException e) {
 					Console.WriteLine("Error: " + e.Message);
+				} finally {
+					DB.Close();
 				}
 			}
+		}
+
+		private void MenuExit() {
+			throw new NotImplementedException();
 		}
 
 		private void function() {
@@ -93,6 +131,8 @@ namespace DB06 {
 
 				} catch (SqlException e) {
 					Console.WriteLine("Error: " + e.Message);
+				} finally {
+					DB.Close();
 				}
 			}
 		}
