@@ -1,0 +1,20 @@
+5.1
+
+5.2
+When normalization dosent make sense, and does not give extra value.'
+E.g. extracting Zip & Country information from a customer table, if not needed for other purposes.
+
+5.3
+
+5.5
+
+5.6
+
+5.7
+
+5.9
+
+5.10
+Foreign Key, is the primary key of another table, used to represent that data.
+
+
