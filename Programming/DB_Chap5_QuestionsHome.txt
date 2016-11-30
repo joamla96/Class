@@ -1,20 +1,65 @@
-5.1
+5.1) Explain how entities are transformed into tables
+1. Tables are designed for each entity and given the name of that entity.
+2. Make the primary key of the relation the identifier of the entity.
+3. Create a column in the relation for each attribute in the entity.
+4. Apply the normalization process. 
 
-5.2
-When normalization dosent make sense, and does not give extra value.'
-E.g. extracting Zip & Country information from a customer table, if not needed for other purposes.
-
-5.3
-
-5.5
-
-5.6
-
-5.7
-
-5.9
-
-5.10
-Foreign Key, is the primary key of another table, used to represent that data.
+You define a table name for each entity and place the attributes in it as columns in the relation.
 
 
+-------------------------------------------
+
+5.2) When is denormalization justified?
+When normalization doesn't make sense, and does not give extra value.' E.g. extracting Zip & Country information from a customer table, if not needed for other purposes.
+
+-------------------------------------------
+
+5.3) Why is it necessary to apply the normalization process to the tables created according to your answer to question 5.1?
+
+Because the process is then applied to each relation and additional relations are created.
+
+-------------------------------------------
+
+5.5) Explain how attributes are transformed into columns. What columns properties to you take into account when making the transformation?
+Each attribute in an entity becomes a coloumn in the corresponding table. The colum properties incldue data type, null status, default values, and any constraint on the values.
+-------------------------------------------
+
+5.6) Explain how supertype and subtype entities are transformed into tables.
+Data design can incorporate supertype and subtype tables in the document. In the flow chart, the organization will determine the order and usefulness of each type. The only special feature is that the primary key of the supertype becomes the primary key and the foreign key on each subtype
+
+-------------------------------------------
+
+5.7) Explain how the how the representation of a week entities differs from the representation of strong entities?
+
+The difference between a weak and a strong entity is
+
+Strong entity set :
+ The relationship between two strong entity set is represented by a diamond symbol 
+ The line connecting strong entity set with the relatiionship is single
+ Member of a strong entity set is a dominant entity
+ It has its own primary key and it is represented by a rectangle
+
+Weak entity set :
+ The relationship between one strong entity set is represented by a double diamond sign
+ The line connecting weak entity set with the relationship is double
+ Member of a weak entity set is a subordinate entity.
+ It is represented by a double rectangle 
+
+The primary key of a weak entity is found by taking the primary key of the strong entity on which it is existence-dependent, plus the discriminator of the weak entity set.
+
+-------------------------------------------
+
+5.9) List the three types of binary relationships and give an example for each?
+1:1 - a single entity instance of one type is related to a single-entity instance of another type.
+Kids Emergency Contact: A school might tie an emergency contact onto a student. One student should only have one emergency contact, and one contact should only be tied to one student.
+
+1:N - a single entity instance of one type is related to many-entity instances of another type.
+Pets: An owner can have multiple pets, but a pet can only have one owner.
+
+M:N - many-entity instances of one type relate to many-entity instances of another type.
+Nursing Home: One nurse, can be tired to multiple seniors, and one senior can have different nurses
+
+-------------------------------------------
+
+5.10) Define the term foreign key and give an example?
+Foreign Key, is the primary key of another table, used to represent that data

@@ -1,2 +1,48 @@
-KPI =>
- Quantify what we're doing
+Knowledge (Programming)
+- 1Pv3. Abstraction mechanisms in modern programming languages
+
+Knowledge (Systems Development) 
+- 1Sv2. The importance of quality criteria for the systems development process and the final systems de-sign
+ * ?? KPI's
+   => Quantify the work we're doing.
+
+Knowledge (Business Understanding)
+- 1Vv1. How IT can improve business processes and develop the business
+
+Skills (Programming) 
+- 1Pf4. Realize models in a database system and construct programs which use a database interface
+- 1Pf6. Design applications based on a layered software architecture
+ * Model View Controller
+   => Solution split up into core, ui, and test project
+- 1Pf8. Prepare documentation in relation to valid de-facto standards in the field
+
+Skills (Systems Development) 
+- 1Sf4. Ensure quality of product and process
+- 1Sf3. Document and communicate product and process – including traceability
+
+Skills (Business Understanding) 
+- 1Vf1. Analyze and model business processes
+- 1Vf2. Participate in project work
+
+Competences (Programming) 
+- 1Pk1. Participate as a professional programmer in development and maintenance projects
+
+Competences (Systems Development)
+- 1Sk1. Participate as a competent member of a development project
+- 1Sk2. Reflect on and adapt processes and methods in practice.
+
+--------------------
+
+Ex 2
+
+Cat 1
+Some class work
+
+Cat 2
+Most class work
+
+Cat 3
+Tech Talks
+
+Cat 4
+
