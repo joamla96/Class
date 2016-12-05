@@ -13,5 +13,9 @@ namespace Core {
 		public void SetPrice(double newPrice) {
 			this.Price = newPrice;
 		}
+
+		public void SetDescription(string newDesc) {
+			this.Description = newDesc;
+		}
 	}
 }
