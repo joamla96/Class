@@ -17,5 +17,10 @@ namespace Core {
 			productType.SetDescription(desc);
 			return true;
 		}
+
+		public bool AdjustAmount(ProductType productType, int amount) {
+			productType.SetAmount(amount);
+			return true;
+		}
 	}
 }

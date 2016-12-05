@@ -17,5 +17,9 @@ namespace Core {
 		public void SetDescription(string newDesc) {
 			this.Description = newDesc;
 		}
+
+		public void SetAmount(int newAmount) {
+			this.Amount = newAmount;
+		}
 	}
 }
