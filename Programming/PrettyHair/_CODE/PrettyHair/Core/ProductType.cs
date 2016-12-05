@@ -6,5 +6,12 @@ using System.Threading.Tasks;
 
 namespace Core {
 	class ProductType {
+		public string Description { get; set; }
+		public double Price { get; set; }
+		public int Amount { get; set; }
+
+		public void SetPrice(double newPrice) {
+			this.Price = newPrice;
+		}
 	}
 }

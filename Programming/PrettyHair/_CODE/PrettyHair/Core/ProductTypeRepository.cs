@@ -9,8 +9,8 @@ namespace Core {
 		private Dictionary<int, ProductType> Repository = new Dictionary<int, ProductType>();
 		// TODO: Update Diagram ^^
 		public bool AdjustPrice(ProductType productType, double price) {
-			// Lunch
-
+			productType.SetPrice(price);
+			return true;
 		}
 	}
 }
