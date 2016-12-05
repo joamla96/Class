@@ -22,5 +22,9 @@ namespace Core {
 			productType.SetAmount(amount);
 			return true;
 		}
+
+		public List<ProductType> GetProductTypes() {
+			return Repository.Values.ToList();
+		}
 	}
 }
