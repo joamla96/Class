@@ -28,12 +28,13 @@ fontsize=20
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>60</x>
-      <y>60</y>
+      <x>130</x>
+      <y>30</y>
       <w>1320</w>
       <h>170</h>
     </coordinates>
-    <panel_attributes>When a customer calls to place an order, the sales manager,
+    <panel_attributes>Recieve (/ Create) Order
+When a customer calls to place an order, the sales manager,
 first checks whether the customer can be found in the system, via the customer id. 
 
 If the customer is not found,
@@ -44,8 +45,8 @@ Then the sales manager inputs the order into the system with an order date, deli
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>270</x>
-      <y>290</y>
+      <x>330</x>
+      <y>250</y>
       <w>160</w>
       <h>120</h>
     </coordinates>
@@ -55,10 +56,10 @@ Then the sales manager inputs the order into the system with an order date, deli
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>740</x>
-      <y>370</y>
-      <w>100</w>
-      <h>30</h>
+      <x>790</x>
+      <y>310</y>
+      <w>110</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>_:System_</panel_attributes>
     <additional_attributes/>
@@ -66,30 +67,30 @@ Then the sales manager inputs the order into the system with an order date, deli
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>390</y>
+      <x>830</x>
+      <y>340</y>
       <w>30</w>
-      <h>490</h>
+      <h>650</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;470.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>390</y>
+      <x>400</x>
+      <y>340</y>
       <w>30</w>
-      <h>500</h>
+      <h>650</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;480.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>390</y>
+      <x>400</x>
+      <y>430</y>
       <w>460</w>
       <h>50</h>
     </coordinates>
@@ -100,8 +101,8 @@ CheckCustomer(ID)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>120</x>
-      <y>440</y>
+      <x>180</x>
+      <y>480</y>
       <w>730</w>
       <h>120</h>
     </coordinates>
@@ -112,8 +113,8 @@ Customer Not Exists</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>460</y>
+      <x>400</x>
+      <y>500</y>
       <w>460</w>
       <h>50</h>
     </coordinates>
@@ -124,46 +125,46 @@ NewCustomer(name, address,...)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>500</y>
+      <x>400</x>
+      <y>540</y>
       <w>460</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-CustomerID</panel_attributes>
+Confirmation</panel_attributes>
     <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>590</y>
-      <w>460</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-NewOrder(OrderDate, DeliveryDate)</panel_attributes>
-    <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>340</x>
+      <x>400</x>
       <y>630</y>
       <w>460</w>
       <h>50</h>
     </coordinates>
+    <panel_attributes>lt=-&gt;
+NewOrder(OrderDate, DeliveryDate, Customer)</panel_attributes>
+    <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>670</y>
+      <w>460</w>
+      <h>50</h>
+    </coordinates>
     <panel_attributes>lt=&lt;.
-Order</panel_attributes>
+Confirmation</panel_attributes>
     <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>120</x>
-      <y>690</y>
+      <x>180</x>
+      <y>730</y>
       <w>740</w>
-      <h>130</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>LOOP
 For Each Orderline</panel_attributes>
@@ -172,13 +173,37 @@ For Each Orderline</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>690</y>
+      <x>400</x>
+      <y>750</y>
       <w>460</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-</panel_attributes>
+AddOrderLine(quantity, ProductType)</panel_attributes>
+    <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>850</y>
+      <w>460</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+Confirm?</panel_attributes>
+    <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>890</y>
+      <w>460</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Yez Plz</panel_attributes>
     <additional_attributes>10.0;30.0;440.0;30.0</additional_attributes>
   </element>
 </diagram>
