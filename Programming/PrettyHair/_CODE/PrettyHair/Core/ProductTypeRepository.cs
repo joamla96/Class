@@ -6,5 +6,10 @@ using System.Threading.Tasks;
 
 namespace Core {
 	class ProductTypeRepository {
+		private Dictionary<int, ProductType> Repository = new Dictionary<int, ProductType>();
+
+		public bool AdjustPrice(ProductType productType, double price) {
+			// Lunch
+		}
 	}
 }
