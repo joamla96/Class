@@ -41,21 +41,17 @@ namespace UserInterface_CLI {
 
 		}
 
-		private void UpdateProduct() {
-			FindAProduct();
-		}
-
-		private void FindAProduct() {
+		private void UpdateProduct() { //Refactor, too big, too much stuff
 			ProductType PT;
 			ListAllPT();
 
-			Console.WriteLine("Type Product ID");
+			Console.WriteLine("\nType Product ID:");
 			int ProductID = int.Parse(GetInput("number"));
 			PT = RepoPT.GetProduct(ProductID);
 
 			Console.WriteLine("1. Update Description");
-			Console.WriteLine("X. Update Amount");
 			Console.WriteLine("X. Update Price");
+			Console.WriteLine("X. Update Amount");
 
 			string Menu = GetInput("number");
 
@@ -69,11 +65,19 @@ namespace UserInterface_CLI {
 					break;
 
 				case "2":
-					throw new NotImplementedException();
+					Console.WriteLine("New Price:");
+					int newPrice = int.Parse(GetInput("number"));
+					RepoPT.AdjustPrice(PT, newPrice);
+					Console.WriteLine("Done");
+					Console.ReadKey();
 					break;
 
 				case "3":
-					throw new NotImplementedException();
+					Console.WriteLine("New Amount:");
+					int newAmount = int.Parse(GetInput("number"));
+					RepoPT.AdjustPrice(PT, newAmount);
+					Console.WriteLine("Done");
+					Console.ReadKey();
 					break;
 			}
 		}
