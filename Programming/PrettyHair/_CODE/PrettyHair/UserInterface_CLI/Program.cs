@@ -50,8 +50,8 @@ namespace UserInterface_CLI {
 			PT = RepoPT.GetProduct(ProductID);
 
 			Console.WriteLine("1. Update Description");
-			Console.WriteLine("X. Update Price");
-			Console.WriteLine("X. Update Amount");
+			Console.WriteLine("2. Update Price");
+			Console.WriteLine("3. Update Amount");
 
 			string Menu = GetInput("number");
 
