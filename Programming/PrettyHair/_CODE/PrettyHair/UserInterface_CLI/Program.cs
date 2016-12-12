@@ -90,6 +90,7 @@ namespace UserInterface_CLI {
 		internal string GetInput(string rule = "", string err = "") {
 			if (err != "") {
 				Console.WriteLine("\n" + err);
+				Console.WriteLine("Try again");
 			}
 			string Input = Console.ReadLine();
 			Validator Valid = new Validator();
