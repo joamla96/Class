@@ -15,7 +15,11 @@ namespace UserInterface_CLI {
 		}
 
 		public bool phone(string input) { // This might not be right...
-			return Regex.IsMatch(input, @"^[(+||00)\d{10}]+S");
+			return Regex.IsMatch(input, @"(+||00)\d{10}");
+		}
+
+		public bool email(string input) {
+			return Regex.IsMatch(input, @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}");
 		}
 	}
 }
