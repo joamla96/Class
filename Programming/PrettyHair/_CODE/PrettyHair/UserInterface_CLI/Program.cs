@@ -41,11 +41,7 @@ namespace UserInterface_CLI {
 
 		private void ListAllPT() {
 			foreach (ProductType PT in RepoPT.GetProductTypes()) {
-				Console.WriteLine(PT.Description);
-				Console.WriteLine("ID: " + PT.ID);
-				Console.WriteLine("Amount: " + PT.Amount);
-				Console.WriteLine("Price: " + PT.Price);
-				Console.WriteLine("------------");
+				Console.WriteLine(PT.ToString());
 			}
 
 		}

@@ -22,5 +22,15 @@ namespace Core {
 		public void SetAmount(int newAmount) {
 			this.Amount = newAmount;
 		}
+
+		public override string ToString() {
+			StringBuilder SB = new StringBuilder();
+			SB.AppendLine(this.Description);
+			SB.AppendLine("ID: " + this.ID);
+			SB.AppendLine("Amount: " + this.Amount);
+			SB.AppendLine("Price: " + this.Price);
+
+			return SB.ToString();
+		}
 	}
 }

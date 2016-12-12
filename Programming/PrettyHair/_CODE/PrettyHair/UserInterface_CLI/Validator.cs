@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace UserInterface_CLI {
 	class Validator {
 		public bool text(string input) {
-			return true; //TODO: Implement
+			return Regex.IsMatch(input, @"^[a-zA-Z]+$");
 		}
 
 		public bool number(string input) {
-			return true; //TODO: Implement
+			return Regex.IsMatch(input, @"^[0-9]+$");
 		}
 	}
 }
