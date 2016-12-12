@@ -7,8 +7,25 @@ namespace UserInterface_CLI {
 
 		static void Main(string[] args) {
 			Program a = new Program();
+			a.Init();
 			a.Run();
 		}
+
+		private void Init() { // Initialize for debug
+							 // NOTE: Remove before production
+			ProductType A = new ProductType();
+			A.ID = 1; A.Amount = 10; A.Description = "Test 1"; A.Price = 5.99;
+
+			ProductType B = new ProductType();
+			B.ID = 2; B.Amount = 50; B.Description = "Test 2"; B.Price = 4.99;
+
+			ProductType C = new ProductType();
+			C.ID = 3; C.Amount = 25; C.Description = "Test 3"; C.Price = 2;
+
+			RepoPT.Add(A);
+			RepoPT.Add(B);
+			RepoPT.Add(C);
+	}
 
 		private void Run() {
 			bool running = true;
@@ -47,43 +64,54 @@ namespace UserInterface_CLI {
 		}
 
 		private void UpdateProduct() { //Refactor, too big, too much stuff
+			bool running = true;
 			ProductType PT;
-			ListAllPT();
 
-			Console.WriteLine("\nType Product ID:");
-			int ProductID = int.Parse(GetInput("number"));
-			PT = RepoPT.GetProduct(ProductID);
+			while (running) {
+				Console.Clear();
+				ListAllPT();
 
-			Console.WriteLine("1. Update Description");
-			Console.WriteLine("2. Update Price");
-			Console.WriteLine("3. Update Amount");
+				Console.WriteLine("\nType Product ID:");
+				int ProductID = int.Parse(GetInput("number"));
+				PT = RepoPT.GetProduct(ProductID);
 
-			string Menu = GetInput("number");
+				Console.WriteLine("1. Update Description");
+				Console.WriteLine("2. Update Price");
+				Console.WriteLine("3. Update Amount");
 
-			switch(Menu) {
-				case "1":
-					Console.WriteLine("New Description:");
-					string newText = GetInput("text");
-					RepoPT.AdjustDescription(PT, newText);
-					Console.WriteLine("Done");
-					Console.ReadKey();
-					break;
+				Console.WriteLine("\n0. Back to Main Menu");
 
-				case "2":
-					Console.WriteLine("New Price:");
-					int newPrice = int.Parse(GetInput("number"));
-					RepoPT.AdjustPrice(PT, newPrice);
-					Console.WriteLine("Done");
-					Console.ReadKey();
-					break;
+				string Menu = GetInput("number");
 
-				case "3":
-					Console.WriteLine("New Amount:");
-					int newAmount = int.Parse(GetInput("number"));
-					RepoPT.AdjustPrice(PT, newAmount);
-					Console.WriteLine("Done");
-					Console.ReadKey();
-					break;
+				switch (Menu) {
+					case "1":
+						Console.WriteLine("New Description:");
+						string newText = GetInput();
+						RepoPT.AdjustDescription(PT, newText);
+						Console.WriteLine("Done");
+						Console.ReadKey();
+						break;
+
+					case "2":
+						Console.WriteLine("New Price:");
+						int newPrice = int.Parse(GetInput("number"));
+						RepoPT.AdjustPrice(PT, newPrice);
+						Console.WriteLine("Done");
+						Console.ReadKey();
+						break;
+
+					case "3":
+						Console.WriteLine("New Amount:");
+						int newAmount = int.Parse(GetInput("number"));
+						RepoPT.AdjustPrice(PT, newAmount);
+						Console.WriteLine("Done");
+						Console.ReadKey();
+						break;
+
+					case "0":
+						running = false;
+						break;
+				}
 			}
 		}
 
