@@ -2,7 +2,7 @@
 using Core;
 
 namespace UserInterface_CLI {
-	class Program {
+	internal class Program {
 		ProductTypeRepository RepoPT = new ProductTypeRepository();
 
 		static void Main(string[] args) {
@@ -11,18 +11,23 @@ namespace UserInterface_CLI {
 		}
 
 		private void Run() {
-			Console.WriteLine("1. List all Product Types");
-			Console.WriteLine("2. Update a Product");
+			bool running = true;
+			while (running) {
+				Console.Clear();
+				Console.WriteLine("1. List all Product Types");
+				Console.WriteLine("2. Update a Product");
 
-			string Menu = GetInput("number");
-			switch(Menu) {
-				case "1":
-					ListAllPT();
-					break;
+				string Menu = GetInput("number");
+				switch (Menu) {
+					case "1":
+						ListAllPT();
+						Console.ReadKey();
+						break;
 
-				case "2":
-					UpdateProduct();
-					break;
+					case "2":
+						UpdateProduct();
+						break;
+				}
 			}
 		}
 
@@ -49,13 +54,14 @@ namespace UserInterface_CLI {
 			PT = RepoPT.GetProduct(ProductID);
 
 			Console.WriteLine("1. Update Description");
-			//Console.WriteLine("2. Update Amount");
-			//Console.WriteLine("3. Update Price");
+			Console.WriteLine("X. Update Amount");
+			Console.WriteLine("X. Update Price");
 
 			string Menu = GetInput("number");
 
 			switch(Menu) {
 				case "1":
+					Console.WriteLine("New Description:");
 					string newText = GetInput("text");
 					RepoPT.AdjustDescription(PT, newText);
 					Console.WriteLine("Done");
