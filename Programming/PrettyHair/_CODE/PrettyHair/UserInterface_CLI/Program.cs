@@ -17,15 +17,23 @@ namespace UserInterface_CLI {
 				Console.WriteLine("1. List all Product Types");
 				Console.WriteLine("2. Update a Product");
 
+				Console.WriteLine("\n0. Exit");
 				string Menu = GetInput("number");
 				switch (Menu) {
+					case "0":
+						running = false;
+						break;
+
 					case "1":
+						Console.Clear();
 						ListAllPT();
 						Console.ReadKey();
 						break;
 
 					case "2":
+						Console.Clear();
 						UpdateProduct();
+						Console.ReadKey();
 						break;
 				}
 			}
@@ -37,6 +45,7 @@ namespace UserInterface_CLI {
 				Console.WriteLine("ID: " + PT.ID);
 				Console.WriteLine("Amount: " + PT.Amount);
 				Console.WriteLine("Price: " + PT.Price);
+				Console.WriteLine("------------");
 			}
 
 		}
