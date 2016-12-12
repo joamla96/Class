@@ -1,17 +1,78 @@
 ﻿using System;
+using Core;
 
 namespace UserInterface_CLI {
 	class Program {
+		ProductTypeRepository RepoPT = new ProductTypeRepository();
+
 		static void Main(string[] args) {
 			Program a = new Program();
 			a.Run();
 		}
 
 		private void Run() {
+			Console.WriteLine("1. List all Product Types");
+			Console.WriteLine("2. Update a Product");
+
+			string Menu = GetInput("number");
+			switch(Menu) {
+				case "1":
+					ListAllPT();
+					break;
+
+				case "2":
+					UpdateProduct();
+					break;
+			}
+		}
+
+		private void ListAllPT() {
+			foreach (ProductType PT in RepoPT.GetProductTypes()) {
+				Console.WriteLine(PT.Description);
+				Console.WriteLine("ID: " + PT.ID);
+				Console.WriteLine("Amount: " + PT.Amount);
+				Console.WriteLine("Price: " + PT.Price);
+			}
 
 		}
 
-		private string GetInput(string rule = "", string err = "") {
+		private void UpdateProduct() {
+			FindAProduct();
+		}
+
+		private void FindAProduct() {
+			ProductType PT;
+			ListAllPT();
+
+			Console.WriteLine("Type Product ID");
+			int ProductID = int.Parse(GetInput("number"));
+			PT = RepoPT.GetProduct(ProductID);
+
+			Console.WriteLine("1. Update Description");
+			//Console.WriteLine("2. Update Amount");
+			//Console.WriteLine("3. Update Price");
+
+			string Menu = GetInput("number");
+
+			switch(Menu) {
+				case "1":
+					string newText = GetInput("text");
+					RepoPT.AdjustDescription(PT, newText);
+					Console.WriteLine("Done");
+					Console.ReadKey();
+					break;
+
+				case "2":
+					throw new NotImplementedException();
+					break;
+
+				case "3":
+					throw new NotImplementedException();
+					break;
+			}
+		}
+
+		internal string GetInput(string rule = "", string err = "") {
 			if (err != "") {
 				Console.WriteLine("\n" + err);
 			}
