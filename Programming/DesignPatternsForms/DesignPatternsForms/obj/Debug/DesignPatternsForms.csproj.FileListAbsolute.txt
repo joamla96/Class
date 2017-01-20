@@ -11,3 +11,6 @@ c:\users\sist\documents\visual studio 2015\Projects\DesignPatternsForms\DesignPa
 C:\Users\jlaur\Desktop\DesignPatternsForms\DesignPatternsForms\bin\Debug\DesignPatternsForms.exe.config
 C:\Users\jlaur\Desktop\DesignPatternsForms\DesignPatternsForms\obj\Debug\DesignPatternsForms.exe
 C:\Users\jlaur\Desktop\DesignPatternsForms\DesignPatternsForms\obj\Debug\DesignPatternsForms.pdb
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\DesignPatternsForms\DesignPatternsForms\bin\Debug\DesignPatternsForms.exe.config
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\DesignPatternsForms\DesignPatternsForms\obj\Debug\DesignPatternsForms.exe
+D:\OneDrive\EAL\OneDrive for Business\Class\Programming\DesignPatternsForms\DesignPatternsForms\obj\Debug\DesignPatternsForms.pdb
