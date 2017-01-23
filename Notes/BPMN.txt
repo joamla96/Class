@@ -7,6 +7,7 @@ Start Event
  - Event which causes the process to start
 Tasks
  - The "stuff" that happens
+ - Heart of the process
 Intermediate Event
  - Status that is reached in the process
  - Milestone status of the process

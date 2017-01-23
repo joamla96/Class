@@ -1,0 +1,9 @@
+Model
+ - Domain Model
+
+ViewModel (Controller)
+ - Logic
+ - Vaulue Converter (on steriods)
+
+View
+ - User Interface
