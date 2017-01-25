@@ -46,5 +46,6 @@ Exercise 2
  - Both focused on Customer Needs
 
  Differences
- - More detailed
- - DIN pushes quicker to prototyping
+ - DIN is more detailed
+ - DIN pushes quicker to prototyping 
+ - DIN model ensures better quality
