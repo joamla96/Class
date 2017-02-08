@@ -1,3 +1,5 @@
+-- Ex 1 --
+
 Plan
 Do Work
 Check
@@ -7,3 +9,45 @@ Adjust
  - Method for making improvement with Quality Control
  - Method to continuely improve something, business process, project, ect
 
+-- Ex 2 --
+
+How do PDCA relate to when you are working on a task?
+
+When and how do you plan?
+ Before working on the task, thinking about its execution.
+ - When we want to implement a change.
+ - Gather as much information on the task beforehand.
+
+When and how do you do?
+ Actually during the task.
+ - Executing your plan
+ - Tests the things we changed/implemented
+
+When and how do you check?
+ Right after doing the work, making sure the executed task furfills criterias (usually layed out in planning stage)
+ - Compare before and now, check if you furfill the cirterias
+ - Review the tests, analyse the results, and identify what we learned about the task.
+
+When and how do you act?
+ After the check, think about how to better meet all criterias.
+ - Check if it's better/worse than before, analyse, and check what could be done better
+ - Like planning, but not planning the task, but planning what to do better
+ - Take action, based on what as learned in the check, ensure the change worked.
+
+
+-- Ex 3 --
+
+How do PDCA relate to when you are working on a sprint?
+
+
+When and how do you plan?
+ Presprint, taking backlog items and breaking them into tasks.
+
+When and how do you do?
+ Executing the sprint.
+
+When and how do you check?
+ Daily standup meetings
+
+When and how do you act?
+ Postsprint meeting (Retro-spective)
