@@ -1,5 +1,7 @@
 -- Ex 1 --
 
+Describe PDCA
+
 Plan
 Do Work
 Check
@@ -41,13 +43,61 @@ How do PDCA relate to when you are working on a sprint?
 
 
 When and how do you plan?
- Presprint, taking backlog items and breaking them into tasks.
+ Pre-sprint, taking backlog items and breaking them into tasks.
 
 When and how do you do?
  Executing the sprint.
 
 When and how do you check?
- Daily standup meetings
+ Daily standup meetings.
+ Sprint Review.
 
 When and how do you act?
- Postsprint meeting (Retro-spective)
+ Postsprint meeting (Retro-spective).
+
+-- Ex 4 --
+How do PDCA relate to when you are working on a project?
+
+When and how do you plan?
+ Beginning of the project, usually the first pre-sprint.
+ Making the day-by-day plan.
+ Problem description, Generating ideas/solutions.
+ Defining group contract, on working together.
+
+When and how do you do?
+ During the project.
+ Working with the ideas/solutions, expanding and explaining.
+ Executing the day-by-day plan
+
+When and how do you check?
+ During the project.
+ Daily "5-minute" meeting.
+ Writting the report, we check we did what we wanted to do.
+ Writting the log.
+ 
+When and how do you act?
+ After the project, review how well we worked together, followed the plan ect.
+
+
+-- Ex 5 --
+How do PDCA relate to other areas whithin system development (and programming)?
+
+What area do you apply it to?
+ Singing Christmas Songs.
+ Unit Testing.
+
+When and how do you plan?
+ Plan what songs to sing.
+ Before making the code, make the unit tests.
+
+When and how do you do?
+ Sing the songs, dance around the trees.
+ Writting the code.
+
+When and how do you check?
+ Talk about how badly we sing afterwards.
+ Running the tests.
+
+When and how do you act?
+ We don't.
+ Refactor the code.
