@@ -74,7 +74,10 @@ When and how do you check?
  //Daily "5-minute" meeting.
  Writting the report, we check we did what we wanted to do.
  Writting the log.
- 
+ If the sprints meets the learning goals
+ KPIs
+ FURPS+
+
 When and how do you act?
  After the project, review how well we worked together, followed the plan ect.
 
