@@ -45,9 +45,9 @@ Competence....: 1Pk1. Participate as a professional programmer in development an
 
 
 1Pk1:
- Create.....:
- Evaluate...:
- Analyze....: 
+ Create.....: No longer make the mistake / Improve my learing from mistakes
+ Evaluate...: Evaluate mistakes
+ Analyze....: Analyze mistakes
  Apply......: Try to program
  Understand.: Programming
  Remember...: C#
