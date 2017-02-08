@@ -59,7 +59,7 @@ When and how do you act?
 How do PDCA relate to when you are working on a project?
 
 When and how do you plan?
- Beginning of the project, usually the first pre-sprint.
+ Beginning of the project, usually the first (pre-)sprint.
  Making the day-by-day plan.
  Problem description, Generating ideas/solutions.
  Defining group contract, on working together.
@@ -70,8 +70,8 @@ When and how do you do?
  Executing the day-by-day plan
 
 When and how do you check?
- During the project.
- Daily "5-minute" meeting.
+ //During the project.
+ //Daily "5-minute" meeting.
  Writting the report, we check we did what we wanted to do.
  Writting the log.
  
