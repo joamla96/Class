@@ -1,0 +1,9 @@
+Plan
+Do Work
+Check
+Adjust
+
+ - A plan to follow, that ensure continues improvement.
+ - Method for making improvement with Quality Control
+ - Method to continuely improve something, business process, project, ect
+
