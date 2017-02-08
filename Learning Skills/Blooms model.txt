@@ -1,0 +1,53 @@
+-- Ex 1 --
+
+Create......: Make new stuff from the old.
+Evaluate....: Judge the stuff (good/bad).
+Analyze.....: See the stuff in another way.
+Apply.......: Use the stuff else where.
+Understand..: Use the stuff.
+Remember....: Know the stuff.
+http://www.nwlink.com/~donclark/hrd/bloom.html
+
+-- Ex 2 --
+
+Create		Competences
+Evaluate
+
+Analyze		Skills
+Apply
+Understand
+
+Understand	Knowledge
+Remember
+
+-- Ex 3 --
+
+Knowledge.....: 1Vv1. How IT can improve business processes and develop the business.
+Skill.........: 1Sf6. Involve users.
+Competence....: 1Pk1. Participate as a professional programmer in development and maintenance projects.
+
+1Vv1:
+ Create.....:
+ Evaluate...:
+ Analyze....:
+ Apply......: 
+ Understand.: Understand business processes
+ Remember...: Read about business processes
+
+
+1Sf6:
+ Create.....:
+ Evaluate...:
+ Analyze....: Users knowledge
+ Apply......: Get different feedback, from different kind of users.
+ Understand.: How different kind of users work
+ Remember...: There are different kind of users
+
+
+1Pk1:
+ Create.....:
+ Evaluate...:
+ Analyze....: 
+ Apply......: Try to program
+ Understand.: Programming
+ Remember...: C#
