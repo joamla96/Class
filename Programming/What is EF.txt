@@ -1,0 +1,5 @@
+ORM - Object Relation Mapper
+
+Helps with persitant storage, moving between relational and objects.
+
+E/F easily talk between databases(/xml) files without much extra code - works like an interface between the storage media
