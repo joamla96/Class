@@ -1,0 +1,8 @@
+https://www.signavio.com/post/business-process-models-quality/
+
+Different Systems should be split into different pools/lines
+
+- Connections between Pools should be dotted lines
+- Understandable, no long text descriptions
+- Specific, not vauge
+- Represent Reality (Confirm with P.O.?)
