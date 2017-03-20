@@ -1,0 +1,13 @@
+==Ex01==
+
+=Unit Tests=
+Used to verify small pieces of code to ensure they work.
+Easy to write, and execute, putting the system in a predictable state.
+Internally only
+
+=Integration Tests=
+Check and verify different pieces of code working together, being other classes or external resources.
+External
+
+Integration is done after Unit Tests, before System Tests
+

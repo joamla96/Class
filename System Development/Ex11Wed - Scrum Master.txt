@@ -1,0 +1,29 @@
+The Purpose of a Scrum Master is to:
+ - Help facilitate SCRUM events (daily meetings ect.)
+ - Assist P.O. to manage backlog and interact with the team
+ - Removing obstructions to help the team self-manage
+ - Ensuring that SCRUM is used properly
+
+
+Tasks of the Scrum Master:
+ - Helping the P.O. maintain the Product Backlog in a way that ensures the needed work is well understood so the team can continually make forward progress
+ - Helping the team to determine the definition of done for the product, with input from key stakeholders
+ - Coaching the team, within the Scrum principles, in order to deliver high-quality features for its product -
+ - Promoting self-organization within the team
+ - Helping the Scrum Team to avoid or remove impediments to its progress, whether internal or external to the team
+ - Facilitating team events to ensure regular progress, by removing distractions
+ - Educating key stakeholders in the product on Scrum principles
+ - Coaching the Development Team in self-organization and cross-functionality
+ 
+
+Qualifications for a ScrumMaster
+ - Servant Leader; Must be able to garner respect from his/her team and be willing to get their hands dirty to get the job done
+ - Communicative and Social; Must be able to communicate well with teams
+ - Facilitative; Must be able to lead and demonstrate value-add principles to a team
+ - Assertive; Must be able to ensure Agile/Scrum concepts and principles are adhered to, must be able to be a voice of reason and authority, make the tough calls.
+ - Situationally Aware; Must be the first to notice differences and issues as they arise and elevate them to management
+ - Enthusiastic; Must be high-energy
+ - Continual improvement; Must continually be growing ones craft learning new tools and techniques to manage oneself and a team
+ - Conflict resolution; Must be able to facilitate discussion and facilitate alternatives or different approaches
+ - Attitude of empowerment; Must be able to lead a team to self-organization
+ - Attitude of transparency; Must desire to bring disclosure and transparency to the business about development and grow business trust

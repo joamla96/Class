@@ -1,0 +1,25 @@
+Algorythms:
+	Bubble Sort
+	Quick Sort
+	Insertion Sort
+	Recursion, Tower of Hanoi
+	
+Design Patterns:
+	Observer Pattern
+	Factory
+	
+Abstract Data Types:
+	Binary Search Tree
+	Linked List
+	
+Data Structures:
+	Arrays
+	Hash Search Table
+	Stacks
+	
+Design Models:
+	Blooms Taxonomy
+	MVVM
+
+User Interfaces:
+	That tutorial, switch between colors/pages
