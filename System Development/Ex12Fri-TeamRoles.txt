@@ -22,9 +22,9 @@ Implementer:
  - Convert ideas (, pizza, and soda) into concrete action
  - Efficient, and self disciplined
  - On-time (makes deadlines)
- - Motivated by loyality
+ - Motivated by loyalty
  - Can take jobs other avoids/dislikes
- - Closed-minded and difficulty deviating from own plans, especially if new plans deviates from efficenty, protocal, and well-establised practices
+ - Closed-minded and difficulty deviating from own plans, especially if new plans deviates from efficient, protocol, and well-established practices
 
 Completer-Finisher:
  - Go an extra-mile to make sure things are just-right
@@ -39,22 +39,25 @@ Coordinator/ Chairperson
  - Confident, stable, & mature => Recognises others abilities
  - Finds the right person for a task
  - Manipulative
- - Calm, charistmatic
+ - Calm, charismatic
 
 Team Worker
  - Keeps team in good pace
  - Supportive
  - Good listeners & diplomatic approaches
  - Team orientated
- - Sentitive & Outgoing
+ - Sensitive & Outgoing
  - Unwilling to take sides
 
+
+
+
 Resource Investigator
- - Negociable
+ - Negotiable
  - Strong communicator
  - Excellent networker, but forgets to follow up
  - Flexible, and innovative
- - Curious and socialable
+ - Curious and social able
  - Open to new ideas and change
  - Can be unrealistic in their optimism
 
@@ -62,7 +65,7 @@ Plant
  - Intellectual and individualistic, likes to work alone
  - Creative
  - Innovative
- - Unorthadox
+ - Unorthodox
  - Problem solver
  - Open-minded
  - Introverts with poor communication skills
@@ -74,7 +77,28 @@ Monitor Evaluator
  - Very uninspiring #BuzzKill
 
 Specialist
- - Has expert knowlege in some vital area
- - Provies knowlege and skill
- - Single minded and proffesional
+ - Has expert knowledge in some vital area
+ - Provides knowledge and skill
+ - Single minded and professional
+
+
+
+= Exercise 2.02 - The tasks of each role =
+
+Shaper
+ - Taking Initiative to getting started
+
+Implementer
+ - Taking Initiative to get started
+
+Completer/Finisher
+ - Making quality plans
+
+Coordinator/Chairperson
+Team Worker
+Resource Investigator
+Plant
+ - Generating Ideas
+Monitor Evaluator
+Specialistx
 
