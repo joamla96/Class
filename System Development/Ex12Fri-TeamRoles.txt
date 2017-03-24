@@ -49,9 +49,6 @@ Team Worker
  - Sensitive & Outgoing
  - Unwilling to take sides
 
-
-
-
 Resource Investigator
  - Negotiable
  - Strong communicator
@@ -81,24 +78,32 @@ Specialist
  - Provides knowledge and skill
  - Single minded and professional
 
-
-
 = Exercise 2.02 - The tasks of each role =
 
 Shaper
  - Taking Initiative to getting started
 
 Implementer
- - Taking Initiative to get started
+ - Taking Initiative to getting started
 
 Completer/Finisher
  - Making quality plans
 
 Coordinator/Chairperson
+ - Planning Meetings
+
 Team Worker
+ - Brining cake/coffee/candy
+
 Resource Investigator
+ - Arraning when and where to meet
+
 Plant
  - Generating Ideas
+
 Monitor Evaluator
-Specialistx
+ - Taking notes
+
+Specialist
+ - Writting Tests
 
