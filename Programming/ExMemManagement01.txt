@@ -1,0 +1,6 @@
+= Exercise 1 =
+
+i. Paging
+ii. Logical displacement does not change, physical displacement is combined logical displacement + displacement from paging
+
+= Exercise 2 =
