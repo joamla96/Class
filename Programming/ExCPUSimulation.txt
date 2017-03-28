@@ -1,4 +1,3 @@
-
 = EX 2 =
 0,10020
 1,30021
@@ -22,7 +21,6 @@
 38,1
 39,10
 
-
 = EX 4 =
 0,10020
 1,20020
@@ -30,5 +28,19 @@
 3,990000
 20,10
 21,20
+
+= EX 5 =
+00	LOAD 20
+01	DIVI 21
+02	STOR 20
+03	TST0
+04	JUMP 00
+05	STOP
+20	     20
+21	     03
+
+Do-while, divide 20 by 3 untill 0. Integer so round makes it true after 3 itterations.
+
+
 
 
